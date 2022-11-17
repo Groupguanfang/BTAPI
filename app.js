@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const port = process.env.WEB_PORT
+const port = 3090
 
 app.use('/system', require('./src/system'))
 

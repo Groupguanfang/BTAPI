@@ -1,9 +1,25 @@
 const request = require("../utils/request")
 
-function Total() {
-  
+async function Total() {
+  return await request({
+    url: "/system?action=GetSystemTotal",
+  })
+}
+
+async function Disk() {
+  return await request({
+    url: "/system?action=GetDiskInfo",
+  })
+}
+
+async function Status() {
+  return await request({
+    url: "/system?action=GetNetWork"
+  })
 }
 
 module.exports = {
-  Total
+  Total,
+  Disk,
+  Status
 }
