@@ -2,6 +2,28 @@
   "name": "BTAPI",
   "version": "1.0.0",
   "main": "index.js",
+  "author": {
+    "name": "Zero",
+    "email": "1203970284@qq.com",
+    "url": "http://github.com/groupguanfang"
+  },
+  "maintainers": [],
+  "description": "宝塔面板 Node.JS 最全API",
+  "keywords": [
+    "baota",
+    "bt"
+  ],
+  "bugs": {
+    "url": "https://github.com/groupguanfang/BTAPI",
+    "email": "1203970284@qq.com"
+  },
+  "config": {
+     "port" : "3090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groupguanfang/BTAPI"
+  },
   "scripts": {
     "dev": "node ./app.js",
     "format": "prettier --write ./* --config ./prettierrc.js"
