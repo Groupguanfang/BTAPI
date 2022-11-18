@@ -1,6 +1,6 @@
 {
   "name": "bt-panel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": {
     "name": "Zero",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "dev": "node ./app.js",
-    "format": "prettier --write ./* --config ./prettierrc.js"
+    "format": "prettier --config prettierrc.js --write ./"
   },
   "dependencies": {
     "axios": "^0.25.0",

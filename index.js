@@ -1,5 +1,9 @@
-const system = require("./api/system")
+const system = require('./api/system')
+const site = require('./api/site')
+const files = require('./api/files')
 
 module.exports = {
-  system
+  system,
+  site,
+  files,
 }

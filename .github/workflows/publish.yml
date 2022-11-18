@@ -2,9 +2,9 @@ name: Publish to NPM
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   publish-to-npm:
@@ -34,13 +34,13 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
 
-      - name:  'Automated Version Bump'
-        uses:  'phips28/gh-action-bump-version@master'
+      - name: 'Automated Version Bump'
+        uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           default: prerelease
-          rc-wording:     'RELEASE,alpha,PicX'
+          rc-wording: 'RELEASE,alpha,PicX'
 
       - name: Publish to NPM
         run: npm publish || true
