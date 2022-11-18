@@ -18,8 +18,18 @@ async function Status() {
   })
 }
 
+async function Update(params) {
+  return await request({
+    url: "/ajax?action=UpdatePanel",
+    params
+  })
+}
+
+
+
 module.exports = {
   Total,
   Disk,
-  Status
+  Status,
+  Update
 }

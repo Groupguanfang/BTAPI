@@ -17,4 +17,9 @@ router.get('/status', async (req,res) => {
   res.send(data.data)
 })
 
+router.get('/update', async (req,res) => {
+  const data = await system.Update(req.query)
+  res.send(data.data)
+})
+
 module.exports = router
