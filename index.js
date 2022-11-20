@@ -2,13 +2,7 @@ const system = require('./api/system')
 const site = require('./api/site')
 const files = require('./api/files')
 
-interface exportData {
-  system: Function,
-  site: Function,
-  files: Function
-}
-
-const data:exportData = {
+const data = {
   system, site, files
 }
 
