@@ -25,13 +25,17 @@
     "url": "https://github.com/groupguanfang/BTAPI"
   },
   "scripts": {
-    "dev": "node ./app.js",
-    "format": "prettier --config prettierrc.js --write ./"
+    "dev": "nodemon ./app.ts",
+    "format": "prettier --config .prettierrc.js --write ./"
   },
   "dependencies": {
+    "@types/node": "^18.11.9",
     "axios": "^0.25.0",
+    "basic-auth": "^2.0.1",
     "express": "^4.18.2",
-    "md5-node": "^1.0.1"
+    "md5-node": "^1.0.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "prettier": "^2.7.1",

@@ -1,7 +1,7 @@
 const request = require('../utils/request')
 
-async function List() {
-  return await request({
+function List() {
+  return request({
     url: '/data?action=getData&table=sites',
   })
 }
