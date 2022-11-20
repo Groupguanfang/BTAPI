@@ -1,6 +1,5 @@
 const axios = require('axios').default
 const md5 = require('md5-node')
-require('dotenv').config()
 
 const request = axios.create({
   baseURL: "http://101.33.221.245:8888",
