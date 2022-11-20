@@ -3,10 +3,10 @@ const md5 = require('md5-node')
 require('dotenv').config()
 
 const request = axios.create({
-  baseURL: process.env.HOST,
+  baseURL: "http://101.33.221.245:8888",
   params: {
     request_time: new Date().getTime(),
-    request_token: md5(new Date().getTime() + md5(process.env.SECRET)),
+    request_token: md5(new Date().getTime() + md5('899loiW5aLbLIRmWEqQZAw9RDK1c782W')),
   },
   method: 'post',
 })
